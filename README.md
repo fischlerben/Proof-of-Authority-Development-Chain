@@ -62,4 +62,4 @@ The above results in the following terminal:
 # 6. Use MyCrypto to send a test transaction using a custom network:
 Set up a custom network on MyCrypto, identifying ETH as the currency and setting your Chain ID to whatever you set it as.  Then, connect to your custom network and access it via the Keystore File.
 
-![error](/Screenshots/error.png?raw=true)
+![mycrypto](/Screenshots/mycrypto.png?raw=true)
