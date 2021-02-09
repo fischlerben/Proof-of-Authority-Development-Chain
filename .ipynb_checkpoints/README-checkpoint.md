@@ -47,14 +47,14 @@ You will get the same message as above.
 
 # 5. Launch the first node into mining mode:
 
-    ./geth --datadir node1 --mine --minerthreads 1
+    ./geth --datadir node1 --unlock "0x3ce53A9c904a68575D59aBCa5A95410E3b7E5195" --mine --rpc --allow-insecure-unlock
     
 The above results in the following terminal:
 ![mining1](/Screenshots/mining1.png?raw=true)
 
 Now, open a new terminal window, cd into your Blockchain-Tools, and launch the second node, passing in the enode address of the first node:
 
-    ./geth --datadir node2 --port 30304 --rpc --bootnodes "enode://57d23e40f7bc2b9cd2e2f1168ac81bb9996e2b8d569807468ba907280b970246e8030b8abc1481d5a16dd79af122702105347d9100c5eca2944d44cff2f38bff@127.0.0.1:30303"
+    ./geth --datadir node2 --mine --unlock "0x62500595E256890FD546B9de97572180a664406c" --port 30304 --allow-insecure-unlock --bootnodes enode://57d23e40f7bc2b9cd2e2f1168ac81bb9996e2b8d569807468ba907280b970246e8030b8abc1481d5a16dd79af122702105347d9100c5eca2944d44cff2f38bff@127.0.0.1:30303
     
 The above results in the following terminal:
 ![mining2](/Screenshots/mining2.png?raw=true)
